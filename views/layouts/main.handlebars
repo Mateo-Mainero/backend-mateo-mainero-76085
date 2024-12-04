@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+  <h1>{{title}}</h1>
+  
+  <ul id="product-list">
+    {{#each products}}
+    <li id="product-{{id}}" class="product-item">
+      <span class="product-title">{{title}}</span>
+      <span class="product-price">$ {{price}}</span>
+      <span class="product-stock">Stock: {{stock}}</span>
+      <button class="delete-btn" onclick="deleteProduct({{id}})">Eliminar</button>
+    </li>
+    {{/each}}
+  </ul>
+
+  <form id="product-form">
+    <input type="text" name="title" placeholder="Título" required>
+    <input type="number" name="price" placeholder="Precio" required>
+    <input type="number" name="stock" placeholder="Stock" required>
+    <button type="submit">Agregar Producto</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>

@@ -40,6 +40,17 @@
       "images/headphones1.png",
       "images/headphones2.png"
     ]
+  },
+  {
+    "id": 4,
+    "title": "Compu Gamer",
+    "price": 1800,
+    "stock": 10
+  },
+  {
+    "id": 5,
+    "title": "alma",
+    "price": 12,
+    "stock": 2
   }
-  
 ]

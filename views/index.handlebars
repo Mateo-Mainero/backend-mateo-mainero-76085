@@ -1,0 +1,12 @@
+
+<h1 class="product-header">Lista de Productos</h1>
+<ul class="product-list">
+  {{#each products}}
+  <li class="product-item">
+    <span class="product-title">{{title}}</span> 
+    <span class="product-price">$ {{price}}</span> 
+    <span class="product-stock">Stock: {{stock}}</span>
+  </li>
+  {{/each}}
+</ul>
+
